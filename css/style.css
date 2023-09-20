@@ -174,3 +174,68 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+/* Buttons */
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 2rem 3rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #056aee;
+  color: #fff;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background-color: #08cff2;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background-color: #e73406;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+  background-color: #fff;
+}
+
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
