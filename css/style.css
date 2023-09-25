@@ -164,8 +164,17 @@ p {
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -176,6 +185,10 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background-color: var(--color-accent);
 }
 
 /* Buttons */
@@ -433,5 +446,55 @@ p {
 
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+
+.testimonials__image {
+  width: 100%;
+}
+
+.testimonials__image-container {
+  position: relative;
+  margin: 3rem 7rem;
+}
+
+.testimonials .icon-container {
+  position: absolute;
+  top: 2rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials .quote {
+    margin: 7rem 3rem;
+  }
+
+  .testimonials .quote__text,
+  .testimonials .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonials__image-container {
+    margin: 3rem;
   }
 }
