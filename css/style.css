@@ -21,7 +21,6 @@ body {
   font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body);
-  margin: 10px;
 }
 
 a {
@@ -33,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -586,7 +586,6 @@ p {
 .block {
   --padding-block: 6rem;
   padding: var(--padding-block) 2rem;
-  border: 2px solid red;
 }
 
 .block__heading {
@@ -681,5 +680,33 @@ p {
 
   .nav__item {
     font-size: 1.6rem;
+  }
+}
+
+/* Hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
