@@ -234,6 +234,13 @@ p {
   background-color: #e73406;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -281,7 +288,7 @@ p {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .input-group .btn {
@@ -708,5 +715,36 @@ p {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain */
+
+.domain {
+  max-width: 768px;
+}
+
+.domain__grid--3x3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 700px;
+  justify-items: center;
+}
+
+.domain__search {
+  margin: 4rem auto;
+  box-shadow: 0 0 30px 20px #e6ebee;
+  max-width: 670px;
+  border: 0;
+}
+
+.domain__badge {
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 768px) {
+  .domain__grid--3x3 {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin: 0 auto;
   }
 }
