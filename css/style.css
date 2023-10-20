@@ -139,7 +139,6 @@ p {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -150,6 +149,7 @@ p {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -845,5 +845,78 @@ p {
   .showcase__image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* Footer block */
+
+.footer {
+  background: #232323;
+}
+
+.footer .collapsible {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__brand {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer__logo {
+  /* TODO: Consider refactoring this code and apply width:100% to all images */
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .list {
+  margin: 0;
+}
+
+.footer .collapsible__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .icon {
+    display: none;
+  }
+
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer__brand {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    order: -1;
+  }
+
+  .footer .collapsible {
+    border-bottom: 0;
+  }
+
+  .footer .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer .collapsible__heading {
+    font-size: 1.6rem;
   }
 }
