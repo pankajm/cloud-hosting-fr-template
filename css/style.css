@@ -205,7 +205,7 @@ p {
   border: 0;
   border-radius: 40px;
   cursor: pointer;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -295,6 +295,7 @@ p {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2.5rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -542,6 +543,9 @@ p {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  top: 4rem;
 }
 
 .callout--primary {
@@ -703,6 +707,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    border-bottom: 1px solid #222;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -716,6 +724,7 @@ p {
 
   .nav__item {
     font-size: 1.6rem;
+    border-bottom: none;
   }
 }
 
@@ -750,7 +759,7 @@ p {
 }
 
 .domain__grid--3x3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   max-width: 700px;
   justify-items: center;
@@ -771,6 +780,9 @@ p {
   .domain__grid--3x3 {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     margin: 0 auto;
+  }
+  .domain__search .btn {
+    padding: 2rem 3rem;
   }
 }
 
@@ -889,6 +901,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 8rem;
+  }
+
   .footer .icon {
     display: none;
   }
